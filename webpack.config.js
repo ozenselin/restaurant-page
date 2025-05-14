@@ -28,6 +28,10 @@ module.exports = {
                 test: /\.(png)$/i,
                 type: 'asset/resource',
             },
+            {
+                test: /\.(woff|woff2)$/i,
+                use: 'asset/resource',
+            },
         ],
     },
 };
