@@ -40,22 +40,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
     font-size: 1rem;
     color: var(--clr-ivory);
     min-height: 100vh;
-    background-image: url('./food.jpg');
-    background-size: 100%;
-    background-color: var(--clr-onyx);
-    background-blend-mode: multiply;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('./food.jpg') top left / cover fixed var(--clr-onyx);
 }
 
 .app-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
     padding: 1.5em 4.5em;
+    margin-bottom: 4em;
 }
 
 .app-header__brand-link__text {
@@ -63,8 +65,10 @@ body {
 }
 
 .nav-list {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     gap: 2.5em;
+    justify-content: center;
 }
 
 .nav-list__item:hover {
@@ -78,8 +82,7 @@ button {
 }
 
 .app-header__action-buttons {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     gap: 1em;
     align-items: center;
 }
@@ -96,7 +99,34 @@ button {
     background-color: var(--clr-orange);
 }
 
+.shopping-bag-image {
+    width: 1.5em;
+}
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero__heading {
+    line-height: .95;
+    font-size: 6em;
+}
+
+.hero__subtext {
+    margin-top: 2em;
+    max-inline-size: 45ch;
+}
+
+.app-footer {
+    padding: 0.5em 0;
+    margin-top: auto;
+    align-self: center;
+}
 
 
 
