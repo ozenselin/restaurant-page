@@ -17,6 +17,7 @@
 }
 
 body {
+    font-size: clamp(1rem, 0.75 + 1.5vw, 2rem);
     line-height: calc(1ex / 0.32);
     -webkit-font-smoothing: antialiased;
 }
@@ -41,5 +42,64 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
     font-size: 1rem;
+    color: var(--clr-ivory);
     min-height: 100vh;
+    background-image: url('./food.jpg');
+    background-size: 100%;
+    background-color: var(--clr-onyx);
+    background-blend-mode: multiply;
 }
+
+.app-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 4.5em;
+}
+
+.app-header__brand-link__text {
+    font-size: 1.25em;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2.5em;
+}
+
+.nav-list__item:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+}
+
+.app-header__action-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.action-button--bag {
+    display: grid;
+    justify-content: center;
+}
+
+.action-button--reservation {
+    color: var(--clr-font-dark);
+    padding: 0.75em 2.0em;
+    border-radius: 2.5em;
+    background-color: var(--clr-orange);
+}
+
+
+
+
+
+
+
+
