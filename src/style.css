@@ -103,25 +103,6 @@ button {
     width: 1.5em;
 }
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 65%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.hero__heading {
-    line-height: .95;
-    font-size: 6em;
-}
-
-.hero__subtext {
-    margin-top: 2em;
-    max-inline-size: 45ch;
-}
-
 .app-footer {
     padding: 0.5em 0;
     margin-top: auto;
