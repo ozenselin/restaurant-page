@@ -1,0 +1,84 @@
+.menu-panel {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.content-heading {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.menu-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 275px);;
+    gap: 2em;
+    margin-bottom: 4em;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'heading heading'
+        'description description'
+        'cost add-button';
+    background-color: rgba(100, 100, 100, .3);
+    border-radius: 1em;
+    list-style: none;
+    padding: 1em;
+}
+
+.menu-item__heading {
+    grid-area: heading;
+    text-wrap: unset;
+}
+
+.menu-item__cost {
+    grid-area: cost;
+    font-size: 2em;
+    color: var(--clr-orange);
+    font-weight: bold;
+    justify-self: start;
+    align-self: center;
+}
+
+.menu-item__button--add {
+    grid-area: add-button;
+    color: var(--clr-font-dark);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: var(--clr-ivory);
+    align-self: center;
+    justify-self: end;
+    position: relative;
+}
+
+.menu-item__button--add::after {
+    content: '+';
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    color: var(--clr-font-dark);
+    font-size: 2em;
+}
+
+.menu-item__description {
+    grid-area: description;
+}
+
+.menu-panel__see-all-button {
+    display: block;
+    margin: 0 auto 1em auto;
+    background-color: var(--clr-orange);
+    color: var(--clr-font-dark);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+}
