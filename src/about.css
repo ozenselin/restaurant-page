@@ -1,0 +1,32 @@
+.about {
+    width: 75%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 4em;
+}
+
+.about__column--links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+}
+
+.about__heading {
+    margin: 1em 0 0.5em 0;
+}
+
+.about a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.about__list-item {
+    margin-bottom: 1em;
+}
+
+.about__list {
+    list-style-type: none;
+    margin-top: 1em;
+}
