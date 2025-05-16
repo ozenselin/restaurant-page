@@ -1,3 +1,4 @@
+import './about.css';
 export default loadAbout;
 
 function createAbout() {
@@ -22,9 +23,10 @@ function createAbout() {
             
             <!-- Email & Opening Hours -->
             <div class="about__column about__column--center">
-              <a href="#" class="about__email">fooding@gmail.com</a>
               <h3 class="about__heading">Opening</h3>
               <p class="about__hours">Everyday – 10AM - 09PM</p>
+              <h3 class="about__heading">Email</h3>
+              <a href="#" class="about__email">fooding@gmail.com</a>
             </div>
             
             <!-- Navigation Links -->
