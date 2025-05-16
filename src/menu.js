@@ -1,3 +1,4 @@
+import './menu.css';
 export default loadMenu;
 
 // text contents
